@@ -1,0 +1,35 @@
+[package]
+name = "shreds"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.86"
+bincode = "1.3.3"
+env_logger = "0.11.5"
+log = "0.4.22"
+borsh = { version = "=1.5.1", features = ["derive"] }
+reed-solomon-erasure = "6.0.0"
+serde = "1.0.208"
+serde_json = "1.0.125"
+solana-entry = "=1.16.27"
+solana-ledger = "=1.16.27"
+solana-program = "=1.16.27"
+solana-sdk = "=1.16.27"
+solana-client = "=1.16.27"
+timed = "0.2.1"
+tokio = { version = "1.39.2", features = ["full"] }
+raydium_amm = { version = "0.3.0", git = "https://github.com/piotrostr/raydium-amm" }
+raydium-library = { git = "https://github.com/piotrostr/raydium-library" }
+anchor-lang = "=0.29.0"
+anchor-client = "=0.29.0"
+indicatif = "0.17"
+reqwest = { version = "0.12.4", features = ["json", "stream"] }
+futures-util = "0.3.30"
+dotenv = "0.15.0"
+once_cell = "1.19.0"
+clap = { version = "4.5.13", features = ["derive"] }
+chrono = "0.4.38"
+hex = "0.4.3"
+rayon = "1.10.0"
+lazy_static = "1.5.0"
